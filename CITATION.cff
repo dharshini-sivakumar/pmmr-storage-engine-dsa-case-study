@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this software in your research or evaluation, please cite it as below."
+authors:
+  - family-names: "PMMR Team"
+    given-names: "Advanced DSA Group"
+title: "Advanced Pruned Merkle Mountain Range (PMMR) Storage Engine in Java"
+version: 1.0.0
+date-released: 2026-10-24
+url: "https://github.com/pmmr-storage-engine"
+keywords:
+  - "data-structures"
+  - "merkle-mountain-range"
+  - "pmmr"
+  - "cryptography"
+  - "blockchain"
+  - "java"
