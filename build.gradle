@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.pmmr'
+version = '1.0.0'
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_11
+    targetCompatibility = JavaVersion.VERSION_11
+}
+
+sourceSets {
+    main {
+        java {
+            srcDirs = ['src']
+        }
+    }
+}
+
+application {
+    mainClass = 'pmmr.Main'
+}
+
+tasks.register('runTests', JavaExec) {
+    group = 'verification'
+    description = 'Executes the full PMMR test suite'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'pmmr.Tests'
+}
+
+tasks.register('runBenchmark', JavaExec) {
+    group = 'application'
+    description = 'Runs the 100k transaction benchmark demo'
+    classpath = sourceSets.main.runtimeClasspath
+    mainClass = 'pmmr.Main'
+    args = ['demo']
+}
