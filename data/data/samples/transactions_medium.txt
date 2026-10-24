@@ -1,0 +1,16 @@
+tx-batch-0001: Coinbase Reward -> Miner1 50 BTC
+tx-batch-0002: Miner1 -> ExchangeA 25 BTC
+tx-batch-0003: Miner1 -> ExchangeB 25 BTC
+tx-batch-0004: ExchangeA -> User101 2.5 BTC
+tx-batch-0005: ExchangeA -> User102 1.2 BTC
+tx-batch-0006: ExchangeA -> User103 4.8 BTC
+tx-batch-0007: ExchangeB -> User201 10.0 BTC
+tx-batch-0008: ExchangeB -> User202 5.0 BTC
+tx-batch-0009: User101 -> MerchantX 0.4 BTC
+tx-batch-0010: User102 -> MerchantY 1.0 BTC
+tx-batch-0011: MerchantX -> SupplierZ 0.3 BTC
+tx-batch-0012: User201 -> EscrowService 8.0 BTC
+tx-batch-0013: EscrowService -> BuyerContract 8.0 BTC
+tx-batch-0014: User202 -> ColdStorage 4.9 BTC
+tx-batch-0015: User103 -> DeFiPool 4.5 BTC
+tx-batch-0016: DeFiPool -> YieldFarm 4.5 BTC
