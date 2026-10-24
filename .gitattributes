@@ -1,0 +1,25 @@
+# Set default behavior to automatically normalize line endings.
+* text=auto
+
+# Explicitly declare text files you want to always be normalized and converted
+# to native line endings on checkout.
+*.java text diff=java
+*.md text
+*.json text
+*.yml text
+*.yaml text
+*.xml text
+*.gradle text
+
+# Windows script files must have CRLF line endings
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Unix shell scripts must have LF line endings
+*.sh text eol=lf
+
+# Binary files
+*.jar binary
+*.class binary
+*.pmmr binary
+*.bin binary
