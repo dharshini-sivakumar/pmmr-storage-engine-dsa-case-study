@@ -1,0 +1,42 @@
+{
+  "description": "Cryptographic reference root commitments for PMMR states of varying sizes",
+  "hash_algorithm": "SHA-256 with domain separation (0x00 leaf, 0x01 node, 0x02 root)",
+  "test_vectors": [
+    {
+      "leaves": 0,
+      "size": 0,
+      "peaks": [],
+      "description": "Empty MMR state"
+    },
+    {
+      "leaves": 1,
+      "size": 1,
+      "peaks": [1],
+      "description": "Single leaf mountain"
+    },
+    {
+      "leaves": 2,
+      "size": 3,
+      "peaks": [3],
+      "description": "Perfect binary tree of height 1"
+    },
+    {
+      "leaves": 3,
+      "size": 4,
+      "peaks": [3, 4],
+      "description": "Two mountains: height 1 and height 0"
+    },
+    {
+      "leaves": 4,
+      "size": 7,
+      "peaks": [7],
+      "description": "Perfect binary tree of height 2"
+    },
+    {
+      "leaves": 7,
+      "size": 11,
+      "peaks": [7, 10, 11],
+      "description": "Three mountains: height 2, height 1, height 0"
+    }
+  ]
+}

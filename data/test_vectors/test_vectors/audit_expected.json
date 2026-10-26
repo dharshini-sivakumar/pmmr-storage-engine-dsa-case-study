@@ -1,0 +1,14 @@
+{
+  "audit_configuration": {
+    "check_position_order": true,
+    "check_child_hashes": true,
+    "check_peak_hashes": true,
+    "check_root_commitment": true
+  },
+  "expected_invariants": {
+    "root_invariance_after_compaction": true,
+    "root_invariance_after_pruning": true,
+    "unspent_proofs_valid_after_compaction": true,
+    "witness_retention_rule": "dead(n) && !dead(parent(n)) retained as proof witness"
+  }
+}
